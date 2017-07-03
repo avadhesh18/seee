@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vidstan</title>
+<meta charset='utf-8'>
+<link rel="stylesheet" href="style.css"/>
+<script src="phonegap.js"></script>
+<script src="jquery.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" /> 
+<script>
+document.addEventListener("touchstart", function(){}, true);
+</script>
+</head>
+<body>
+<div class="header"><div class="left"><a href="menu.html"><img src="images/menu.png" alt="back"/></a></div><div class="logo"><img src="images/logo.png"/></div><div class="right"><a href="#search" id="search"><img src="images/search.png" alt="search"/></a></div></div></div>
+
+<div class="searchform"><form action="search.html"><input id="focus" type="search" name="q"/> <span class="close"><img src="images/close.png"/></span></form></div>
+<div class="heading"><a href="javascript:history.back()" class="gob"><img src="images/back.png" alt="&lt;"></a> <h1 id="title"></h1></div>
+
+<div id="loading"><div class="loader"><img src="images/loader.gif"/></div></div>
+
+
+
+
+<script src="myjs.js"></script>
+<script>
+
+
+var url = 'http://wapistan.co.in/app/video.php?q=' + getParameterByName('q') + '&ver=1.0';
+var ntr  = getParameterByName('q');
+$("#title").html(ntr);
+var headID = document.getElementsByTagName("head")[0];
+var script = document.createElement('script');
+script.type='text/javascript';
+
+
+script.src=url;
+
+script.onload= function(){
+        loaded();
+    }
+
+headID.appendChild(script);
+ function loaded(){
+$("#loading").html(data);
+
+};
+</script>
+
+
+ 
+
+
+</body>
+</html>
+

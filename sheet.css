@@ -1,0 +1,307 @@
+
+ 
+ @font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(includes/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.3em;
+  font-family: "Roboto",sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87);
+    -webkit-overflow-scrolling: touch;
+}
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-size:16px;
+}
+#wrapper {
+	
+         overflow-y: scroll;
+        -webkit-overflow-scrolling: touch
+}
+.noscroll {overflow:hidden;}
+
+.navbar-fixed {
+
+    overflow: hidden;  
+
+    z-index: 100;
+    overflow: visible;
+    height: 49px;
+}
+
+.navbar-fixed {}
+
+nav {
+    position: fixed;
+    top: 0;
+    background: #2196F3;
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    height: 50px;
+	font-size:1.02em;
+	box-shadow:0px 2px 3px rgba(68, 68, 68, 0.10);
+}
+
+a.menu-left {
+    float: left;
+}
+
+a.menu-right {
+    float: right;
+}
+
+nav a {
+    padding: 12px 10px;
+	max-height:51px;
+    color: white;
+}
+
+span#titlepage {
+    margin-top: 14px;
+    display: inline-block;
+}
+
+form#thesearch {
+}
+
+.input-field {
+    position: relative;
+}
+
+input#search {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 30px;
+    outline: 0;
+    border: 2px solid #eee;
+		font-size: 17px;
+		 -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+
+label.label-icon {
+    position: absolute;
+    top: 9px;
+    left: 8px;
+}
+
+i#cls {
+    position: absolute;
+    right: 12px;
+    top: 5px;
+    background: white;
+    padding: 4px;
+}
+form#thesearch {
+    position: fixed;
+    left: 0;
+    right: 0;
+	display:none;
+
+}
+ul#slide-out {
+    background: white;
+	width:227px;
+
+	display:none;
+}
+
+ul#slide-out li {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+ul#slide-out {
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid rgba(2, 2, 2, 0.48);
+    box-shadow: 2px 42px 8em #aaa;
+    position: absolute;
+    top: 0px;
+    overflow: scroll;
+    height: 100%;
+    z-index: 10000;
+}
+
+.user-view {
+    background: #2196f3;
+    color: white;
+    padding: 10px;
+}
+
+ul#slide-out li a {
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+li a i {
+    float: left;
+    margin-right: 10px;
+    margin-top: -1px;
+    font-size: 1.2em!important;
+    color: #666 !important;
+}
+
+.lessindex {
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 300;
+	display:none;
+}
+
+span.name h5 {
+    font-size: 1.2em;
+    padding-left: 6px;
+    margin: 13px 0px;
+}
+
+ul#slide-out li a:hover {
+    background: #f5f5f5;
+}
+
+h4.sbtitle {
+    background: #F5F5F5;
+    padding: 10px 18px;
+    overflow: hidden;
+    margin: 0;
+    padding: 10px 12px;
+}
+h4.sbtitle i {
+    color: #2196f3;
+    margin-right: 7px;
+    font-weight: 700;
+    font-size: 1.1em;
+    float: left;
+}
+
+
+.link {clear: both;overflow: hidden;border-bottom: 1px solid #eee;}
+
+.link a {
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+span.secondary-content {
+    float: right;
+    margin-right: -5px;
+    color: #d1d1d1;
+    font-weight: 400;
+    font-weight: 300;
+}
+
+
+
+
+h1.page-header {
+    font-size: 40px;
+    font-size: 1.25rem;
+    margin: 4px 0px;
+    margin-bottom: 8px;
+    font-weight: 400;
+    line-height: 1.24em;
+}
+.movie strong, .movie a{color:#666;     font-weight: 300;}
+
+.information {
+    background: white;
+    padding: 10px 20px;
+    padding-bottom: 15px;
+    background: #f9f9f9;
+}
+p {
+    font-size: 1.13rem;
+padding:2px 20px;
+    font-size: 1.13rem;
+    padding: 2px 20px;
+    font-weight: 400;
+    font-size: 1.06em;
+    line-height: 1.24em;
+}
+
+
+.link a em {
+    display: block;
+    font-size: 0.87em;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 2px;
+}
+
+.loadit {
+    text-align: center;
+    margin-top: 60px;
+}

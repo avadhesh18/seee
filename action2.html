@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lyrics</title>
+<meta charset='utf-8'>
+<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+<script src="phonegap.js"></script>
+<script src="jquery.js"></script>
+ <script type="text/javascript" src="js/materialize.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" /> 
+<script>
+document.addEventListener("touchstart", function(){}, true);
+</script>
+<style>
+
+</style>
+
+</head>
+<body>  <div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+ <span class="stt" id="titlepage"></span>
+   
+   <a href="#"  class="button-collapse"  data-activates="slide-out" style="display:none;" onclick="window.history.go(-1); return false;"><i class="material-icons">menu</i></a>
+    <ul id="nav-mobile" class="left">
+      <li><a href="#"  class="waves-effect waves-light" onclick="window.history.go(-1); return false;"><i class="material-icons">arrow_back</i></li></a>
+
+    </div>
+  </nav></div>
+          
+  <ul id="slide-out" class="side-nav">
+  </ul>
+
+
+        
+<div id="loading"></div>
+<script src="myjs.js"></script>
+  <script>
+
+
+  
+  function onDeviceReady() {
+    if(typeof FCMPlugin !== "undefined"){
+         FCMPlugin.getToken(
+              function(token){
+                    alert(token);
+              }, function(err){
+                    alert('error retrieving token: ' + err);
+              }
+         );
+    }
+}
+
+
+document.addEventListener("deviceready", onDeviceReady, false);
+  
+FCMPlugin.getToken(
+  function(token){
+    alert(token);
+      FCMPlugin.subscribeToTopic('new');
+  },
+  function(err){
+    console.log('error retrieving token: ' + err);
+  }
+)
+    
+    
+    
+    FCMPlugin.onNotification(
+  function(data){
+    if(data.wasTapped){
+      //Notification was received on device tray and tapped by the user. 
+      console.log( JSON.stringify(data) );
+    }else{
+      //Notification was received in foreground. Maybe the user needs to be notified. 
+      console.log( JSON.stringify(data) );
+    }
+  },
+  function(msg){
+    console.log('onNotification callback successfully registered: ' + msg);
+  },
+  function(err){
+    console.log('Error registering onNotification callback: ' + err);
+  }
+);
+       
+</script>
+
+<script>
+var url = 'http://45.55.193.178/saver/show/song.php?id=' + getParameterByName('q') + '&ver=1.0';
+
+var headID = document.getElementsByTagName("head")[0];
+var script = document.createElement('script');
+script.type='text/javascript';
+script.src=url;
+script.onload= function(){
+        loaded();
+    }
+headID.appendChild(script);
+ function loaded(){
+
+$("#loading").html(data);
+};
+</script>
+
+
+</body>
+</html>

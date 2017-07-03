@@ -1,0 +1,59 @@
+
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" 
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+id="com.indpage.lyricsnext" version="0.9"  versionCode = "10">
+  <name>LyricsNext</name>
+  <description>Hindi Songs Lyrics</description>
+  <author href="https://www.indpage.com" email="onbhilwara@gmail.com">Avadhesh Bhunwaliya</author>
+  <content src="index.html"/>
+  <preference name="permissions" value="none"/>
+  <preference name="phonegap-version" value="cli-6.5.0" />
+ <preference name="android-build-tool" value="gradle" />
+  <preference name="orientation" value="portrait"/>
+  <preference name="target-device" value="universal"/>
+  <preference name="fullscreen" value="false"/>
+  <preference name="webviewbounce" value="true"/>
+  <preference name="prerendered-icon" value="true"/>
+  <preference name="stay-in-webview" value="false"/>
+  <preference name="detect-data-types" value="true"/>
+  <preference name="exit-on-suspend" value="false"/>
+   <preference name="ShowSplashScreenSpinner" value="false"/>
+  <preference name="auto-hide-splash-screen" value="true"/>
+  <preference name="disable-cursor" value="false"/>
+  <preference name="android-minSdkVersion" value="15"/>
+  <preference name="android-installLocation" value="auto"/>
+   <plugin name="cordova-plugin-device" />
+
+
+   <plugin name="cordova-plugin-device"/>
+  <plugin name="cordova-plugin-inappbrowser " />
+<plugin name="cordova-plugin-device-orientation"/>
+  <plugin name="cordova-plugin-network-information"/>
+  <plugin name="cordova-plugin-splashscreen"/>
+	<plugin name="cordova-plugin-splashscreen"/>
+	<plugin spec="https://github.com/avadhesh18/cordova-plugin-fcm-config.git" source="git" />
+    <plugin name="cordova-plugin-fcm" />
+	    <plugin name="cordova-plugin-whitelist" />
+
+<icon src="xhd.png"/>
+<icon src="xhd.png" gap:platform="android" gap:qualifier="ldpi" />
+<icon src="xhd.png" gap:platform="android" gap:qualifier="mdpi" />
+<icon src="xhd.png" gap:platform="android" gap:qualifier="hdpi" />
+<icon src="xhd.png" gap:platform="android" gap:qualifier="xhdpi" />
+<icon src="xhd.png" gap:platform="android" gap:qualifier="xxhdpi" />
+<icon src="xhd.png" gap:platform="android" gap:qualifier="fr-xxhdpi" />
+<gap:splash src="splash.png" />
+	<preference name="SplashScreenDelay" value="3200" />
+<platform name="android" />
+<config-file platform="android" parent="/manifest" mode="merge">
+    <application android:theme="@android:style/Theme.Translucent.NoTitleBar"></application>
+</config-file>
+
+	
+
+<access origin="*" />
+<allow-intent href="http://*/*" />
+<allow-intent href="https://*/*" />
+<allow-navigation href="http://*/*" />
+<allow-navigation href="https://*/*" />
+</widget>
