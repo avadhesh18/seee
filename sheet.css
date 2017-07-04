@@ -51,13 +51,15 @@ html {
   font-family: "Roboto",sans-serif;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87);
-    -webkit-overflow-scrolling: touch;
+
 }
 }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+		    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
 }
 
 body {
@@ -69,10 +71,8 @@ body {
 
 .navbar-fixed {
 
-    overflow: hidden;  
-
     z-index: 100;
-    overflow: hidden;
+ 
     height: 49px;
 	position:fixed;
 	    left: 0;
@@ -84,11 +84,8 @@ body {
 .navbar-fixed {}
 
 nav {
-    position: fixed;
-    top: 0;
+
     background: #1c92ff;
-    left: 0;
-    right: 0;
     color: white;
     text-align: center;
     height: 50px;
@@ -169,6 +166,7 @@ form#thesearch {
     backface-visibility: hidden;
 	    position: absolute;
     top: 50px;
+	    -webkit-overflow-scrolling: touch;
 }
 ul#slide-out {
     background: white;
@@ -176,6 +174,7 @@ ul#slide-out {
 
 	display:block;
 	margin-left:-300px;
+	    -webkit-overflow-scrolling: touch;
 }
 
 ul#slide-out li {
@@ -183,7 +182,7 @@ ul#slide-out li {
     padding: 0;
     list-style-position: inside;
     list-style-type: none;
-		margin-left:-300px;
+		
 }
 
 ul#slide-out {
@@ -196,6 +195,7 @@ ul#slide-out {
     overflow: scroll;
     height: 100%;
     z-index: 10000;
+	margin-left:-300px;
 }
 
 .user-view {
