@@ -30,14 +30,14 @@ id="com.indpage.lyricsnext" version="0.9"  versionCode = "10">
 <plugin name="cordova-plugin-device-orientation"/>
   <plugin name="cordova-plugin-network-information"/>
   <plugin name="cordova-plugin-splashscreen"/>
-	<plugin name="cordova-android-play-services-gradle-release"/>
+	
 	<plugin spec="https://github.com/avadhesh18/cordova-plugin-fcm-config.git" source="git" />
     <plugin name="cordova-plugin-fcm" />
 	    <plugin name="cordova-plugin-whitelist" />
    <plugin name="cordova-plugin-statusbar" />
 <plugin spec="https://github.com/kkleokrish/admob-google-cordova-clean.git" source="git" />
 <preference name="StatusBarBackgroundColor" value="#2184e0" />
-
+<plugin name="cordova-android-play-services-gradle-release"/>
 <icon src="xhd.png"/>
 <icon src="xhd.png" gap:platform="android" gap:qualifier="ldpi" />
 <icon src="xhd.png" gap:platform="android" gap:qualifier="mdpi" />
