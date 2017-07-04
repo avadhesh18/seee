@@ -30,7 +30,7 @@ id="com.indpage.lyricsnext" version="0.9"  versionCode = "10">
 <plugin name="cordova-plugin-device-orientation"/>
   <plugin name="cordova-plugin-network-information"/>
   <plugin name="cordova-plugin-splashscreen"/>
-	<plugin name="cordova-plugin-splashscreen"/>
+	<plugin name="cordova-android-play-services-gradle-release"/>
 	<plugin spec="https://github.com/avadhesh18/cordova-plugin-fcm-config.git" source="git" />
     <plugin name="cordova-plugin-fcm" />
 	    <plugin name="cordova-plugin-whitelist" />
