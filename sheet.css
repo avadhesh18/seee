@@ -78,6 +78,7 @@ body {
     z-index: 100;
     overflow: visible;
     height: 49px;
+	position:fixed;
 }
 
 .navbar-fixed {}
@@ -157,6 +158,15 @@ form#thesearch {
     right: 0;
 	display:none;
 
+}
+#loading{margin-top:50px;-webkit-overflow-scrolling: touch;
+-webkit-transform: translateZ(0);
+-webkit-backface-visibility: hidden;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 ul#slide-out {
     background: white;

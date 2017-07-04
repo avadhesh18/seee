@@ -3,7 +3,6 @@ $(function() {
 });
 
 
-
 $(document).on('click', 'a[tagert^="_notinapp"]', function (e) {
 var url = $(this).attr('href');
 navigator.app.loadUrl(url, { openExternal: true });
