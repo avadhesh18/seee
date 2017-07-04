@@ -29,7 +29,11 @@ $("#thesearch").fadeOut("100",function ()
 
 $("#menuop").click(function(){
 		$("body").toggleClass("noscroll");
-$("#slide-out").animate({width:'toggle'},70);
+  $( "#slide-out" ).animate({
+    marginLeft: "0px",
+
+  }, 100 );
+
 
 
 $(".lessindex").fadeIn(50);
@@ -37,7 +41,10 @@ $(".lessindex").fadeIn(50);
 });
 $(".lessindex").click(function(){
 	$("body").toggleClass("noscroll");
-	$("#slide-out").animate({width:'toggle'},70);
+ $( "#slide-out" ).animate({
+    marginLeft: "-300px",
+
+  }, 100 );
 	$(".lessindex").fadeOut(50);
 });
 

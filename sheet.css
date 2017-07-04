@@ -64,11 +64,7 @@ body {
     margin: 0;
     font-size:16px;
 }
-#wrapper {
-	
-         overflow-y: scroll;
-        -webkit-overflow-scrolling: touch
-}
+
 .noscroll {overflow:hidden;}
 
 .navbar-fixed {
@@ -163,7 +159,7 @@ form#thesearch {
 	display:none;
 
 }
-#loading{margin-top:50px;-webkit-overflow-scrolling: touch;
+#loading{-webkit-overflow-scrolling: touch;
 -webkit-transform: translateZ(0);
 -webkit-backface-visibility: hidden;
     -webkit-overflow-scrolling: touch;
@@ -171,12 +167,15 @@ form#thesearch {
     transform: translateZ(0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+	    position: absolute;
+    top: 50px;
 }
 ul#slide-out {
     background: white;
 	width:227px;
 
-	display:none;
+	display:block;
+	margin-left:-300px;
 }
 
 ul#slide-out li {
