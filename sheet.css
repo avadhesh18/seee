@@ -76,9 +76,13 @@ body {
     overflow: hidden;  
 
     z-index: 100;
-    overflow: visible;
+    overflow: hidden;
     height: 49px;
 	position:fixed;
+	    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
 }
 
 .navbar-fixed {}
@@ -86,7 +90,7 @@ body {
 nav {
     position: fixed;
     top: 0;
-    background: #2196F3;
+    background: #1c92ff;
     left: 0;
     right: 0;
     color: white;
@@ -195,7 +199,7 @@ ul#slide-out {
 }
 
 .user-view {
-    background: #2196f3;
+    background: #1c92ff;
     color: white;
     padding: 10px;
 }
@@ -248,7 +252,7 @@ h4.sbtitle {
     padding: 10px 12px;
 }
 h4.sbtitle i {
-    color: #2196f3;
+    color:#1c92ff;
     margin-right: 7px;
     font-weight: 700;
     font-size: 1.1em;
