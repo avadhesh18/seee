@@ -35,6 +35,7 @@ id="com.indpage.lyricsnext" version="0.9"  versionCode = "10">
     <plugin name="cordova-plugin-fcm" />
 	    <plugin name="cordova-plugin-whitelist" />
    <plugin name="cordova-plugin-statusbar" />
+<plugin spec="https://github.com/kkleokrish/admob-google-cordova-clean.git" source="git" />
 <preference name="StatusBarBackgroundColor" value="#2184e0" />
 
 <icon src="xhd.png"/>

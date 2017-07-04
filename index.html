@@ -59,6 +59,29 @@
     }
 };
 
+
+  function onDeviceReady() {
+      document.removeEventListener('deviceready', onDeviceReady, false);
+      
+      // Set AdMobAds options:
+      admob.setOptions({
+        publisherId:          "ca-app-pub-7970412992211018/2517049117",  // Required
+		  adSize:               admob.AD_SIZE.SMART_BANNER,
+  bannerAtTop:          false,
+  overlap:              false,
+  offsetStatusBar:      false,
+  isTesting:            true,
+  autoShowBanner:       true,
+  autoShowInterstitial: false
+      });
+      
+      // Start showing banners (atomatic when autoShowBanner is set to true)
+      admob.createBannerView();
+      
+
+    }
+	
+	
 document.addEventListener("deviceready", onDeviceReady, false);
   
  
