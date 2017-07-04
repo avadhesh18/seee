@@ -22,6 +22,7 @@ id="com.indpage.lyricsnext" version="0.9"  versionCode = "10">
   <preference name="disable-cursor" value="false"/>
   <preference name="android-minSdkVersion" value="15"/>
   <preference name="android-installLocation" value="auto"/>
+<plugin name="cordova-android-play-services-gradle-release"/>
    <plugin name="cordova-plugin-device" />
 
 
@@ -37,7 +38,7 @@ id="com.indpage.lyricsnext" version="0.9"  versionCode = "10">
    <plugin name="cordova-plugin-statusbar" />
 <plugin spec="https://github.com/kkleokrish/admob-google-cordova-clean.git" source="git" />
 <preference name="StatusBarBackgroundColor" value="#2184e0" />
-<plugin name="cordova-android-play-services-gradle-release"/>
+
 <icon src="xhd.png"/>
 <icon src="xhd.png" gap:platform="android" gap:qualifier="ldpi" />
 <icon src="xhd.png" gap:platform="android" gap:qualifier="mdpi" />
